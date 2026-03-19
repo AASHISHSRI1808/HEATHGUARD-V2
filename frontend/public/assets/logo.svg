@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="50%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="pulseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield body -->
+  <path d="M32 4 L56 14 L56 34 C56 46 44 56 32 60 C20 56 8 46 8 34 L8 14 Z" fill="url(#shieldGrad)" />
+  <!-- Inner shield highlight -->
+  <path d="M32 10 L50 18 L50 34 C50 43 41 51 32 54 C23 51 14 43 14 34 L14 18 Z" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <!-- Medical cross -->
+  <rect x="28" y="22" width="8" height="20" rx="2" fill="white" opacity="0.95"/>
+  <rect x="22" y="28" width="20" height="8" rx="2" fill="white" opacity="0.95"/>
+  <!-- Heartbeat pulse line on top of cross -->
+  <polyline points="18,32 22,32 25,26 29,38 33,28 36,36 38,32 46,32" stroke="url(#pulseGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.85"/>
+</svg>
